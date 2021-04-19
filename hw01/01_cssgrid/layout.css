@@ -19,6 +19,7 @@ body {
     height: 100vh;
     background: black;
     color: white;
+    border: 1px dotted white
 }
 
 aside, footer, header, nav, #featured-content{
@@ -30,7 +31,6 @@ aside, footer, header, nav, #featured-content{
 
 aside{
     grid-area: left;
-    background: lightskyblue
 }
 
 main{
@@ -41,27 +41,23 @@ main{
 
 footer{
     grid-area: bottom;
-    background: lightblue
 }
 
 header{
     height: 70px;
     width: calc(100vw - 250px);
     position: fixed;
-    background: lightsteelblue;
 }
 
 nav{
     margin-top: 80px;
     height: 100px;
-    background: rgb(71, 238, 238)
 }
 
 #featured-content{
     min-height: 100vh;
     align-items: flex-start;
     margin-top: 10px;
-    background: rgb(31, 157, 235)
 }
 
 @media screen and (max-width: 800px) {
@@ -78,6 +74,5 @@ nav{
     
     header{
         width: 100vw;
-        background: teal;
     }
 }
