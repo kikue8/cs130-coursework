@@ -43,6 +43,10 @@ h3, p, a{
     font-family: "Lato", sans-serif
 }
 
+a {
+    color: #E0DFD5
+}
+
 .header{
     background-image: url("city.jpeg");
     padding-left: 20px
@@ -73,6 +77,10 @@ h3, p, a{
 .folder:hover{
     background: #313638;
     color: #F09D51
+}
+
+a:hover{
+    color: #F09D51 
 }
 
 .fa-folder{
