@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>Spotify Player</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="player.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body id="container">
+        <aside id="sidebar">
+            <h1>
+                <i class="fab fa-spotify"></i>
+                Spotify
+            </h1>
+            <a href="#">
+                <i class="fas fa-home"></i>
+                Home
+            </a>
+            <a href="#">
+                <i class="fas fa-search"></i>
+                Search
+            </a>
+            <a class="selected" href="#">
+                <i class="fas fa-headphones-alt"></i>
+                Your Library
+            </a>
+        </aside>
+        <main>
+            <header>
+                <a href="#" id="upgrade">Upgrade</a>
+                <a href="#" id="profile">
+                    <i class="far fa-user"></i> Profile</a>
+            </header>
+            <nav>
+                <a href="#" id="navigation">Playlists</a>
+                <a href="#" id="navigation">Albums</a>
+                <a href="#" id="navigation" >Artists</a>
+            </nav>
+            <article id="featured-content">
+                <section class="artist-card">
+                    <div>
+                        <img src="https://i.scdn.co/image/62b33d12e2b9a033cf77585f6e3d4b2c6b3a63a1" />
+                        <h3>Taylor Swift</h3>
+                        <p>Artist <span class="play-button"><i class="fas fa-play"></i></span> </p>
+                    </div>
+                </section>
+
+                <section class="artist-card">
+                    <div>
+                        <img src="https://i.scdn.co/image/0433f521b1fadf1d839b6e70c3914021f122901f" />
+                        <h3>Chance the Rapper</h3>
+                        <p>Artist <span class="play-button"><i class="fas fa-play"></i></span></p>
+                    </div>
+                </section>
+
+                <section class="artist-card">
+                    <div>
+                        <img src="https://i.scdn.co/image/0c9057cb30520f9f883a220051260fc66a2f3ffa" />
+                        <h3>BTS</h3>
+                        <p>Artist <span class="play-button"><i class="fas fa-play"></i></span></p>
+                    </div>
+                </section>
+
+                <section class="artist-card">
+                    <div>
+                        <img src="https://i.scdn.co/image/e33e4245fe5901ed940ba95070bb8d56679b6fe0" />
+                        <h3>Lizzo</h3>
+                        <p>Artist <span class="play-button"><i class="fas fa-play"></i></span</p>
+                    </div>
+                </section>
+
+                <section class="artist-card">
+                    <div>
+                        <img src="https://i.scdn.co/image/1fc2f537d678d701d7d143a8fd4f0c2f29fbde22" />
+                        <h3>Rihanna</h3>
+                        <p>Artist <span class="play-button"><i class="fas fa-play"></i></span></p>
+                    </div>
+                </section>
+
+                <section class="artist-card">
+                    <div>
+                        <img src="https://i.scdn.co/image/b1dfbe843b0b9f54ab2e588f33e7637d2dab065a" />
+                        <h3>Ariana Grande</h3>
+                        <p>Artist <span class="play-button"><i class="fas fa-play"></i></span></p>
+                    </div>
+                </section>
+
+                <section class="artist-card">
+                    <div>
+                        <img src="https://i.scdn.co/image/2622edec99d68d1d141886be593c88cbe509f6d8" />
+                        <h3>Billie Eilish</h3>
+                        <p>Artist <span class="play-button"><i class="fas fa-play"></i></span></p>
+                    </div>
+                </section>
+
+                <section class="artist-card">
+                    <div>
+                        <img src="https://i.scdn.co/image/9fef2047e4e3f05031807d5fa9e121b7862ba259" />
+                        <h3>Beyoncé</h3>
+                        <p>Artist <span class="play-button"><i class="fas fa-play"></i></span></p>
+                    </div>
+                </section>
+
+                <section class="artist-card">
+                    <div>
+                        <img src="https://i.scdn.co/image/12d5ab979779aa41e697ce823328d527e643e4cf" />
+                        <h3>Lil Nas X</h3>
+                        <p>Artist <span class="play-button"><i class="fas fa-play"></i></span></p>
+                    </div>
+                </section>
+
+                <section class="artist-card">
+                    <div>
+                        <img src="https://i.scdn.co/image/fec51156ed94b7ee30fbd4c7fd29b4a840e7daec" />
+                        <h3>Travis Scott</h3>
+                        <p>Artist <span class="play-button"><i class="fas fa-play"></i></span></p>
+                    </div>
+                </section>
+
+
+            </article>
+        </main>
+        <footer>
+            <div class="current-song">
+                <img src="https://i.scdn.co/image/5d6e2a7429fa5e1b8b833b4e153c7a4f190dfe67" alt="">
+                <div class="label">
+                    <h3>Jump Then Fall</h3>
+                    <p>Taylor Swift</p>
+                </div>
+            </div>
+            <div class="player">
+                <div class="controls">
+                    <i class="fas fa-step-backward"></i>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-step-forward"></i>
+                </div>
+                <div class="slider">
+                    <audio preload class="audio">
+                        <source src="#" type="audio/mpeg" />
+                    </audio>
+                    <span id="time-elapsed">0:00</span>
+                    <input type="range" id="player-time">
+                    <span id="time-total">3:00</span>
+                </div>
+            </div>
+        </footer>
+        <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
+    </body>
+</html>
