@@ -86,10 +86,8 @@ document.querySelector('main').innerHTML += template
 
 // Part 2: 
 const playSong = (ev) => {
-  console.log(ev.currentTarget.dataset.index);
   const idx = Number(ev.currentTarget.dataset.index);
   const currentTrack = tracks[idx];
-  console.log(currentTrack);
   document.querySelector('#audio-source').src = currentTrack.preview_url
   const audio = document.querySelector('audio');
   audio.load();
