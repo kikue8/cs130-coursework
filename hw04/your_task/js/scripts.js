@@ -27,7 +27,7 @@ const getTracks = (term) => {
                 document.querySelector("#track-section").innerHTML = '<h1>Songs</h1>';
                 for (const track of tracks){
                     document.querySelector("#track-section").innerHTML += `<section class="track-item preview" 
-                    data-preview-track="${track.preview_url}">
+                    data-index="${track.preview_url}">
                     <img src="${track.album.image_url}">
                     <i class="fas play-track fa-play" aria-hidden="true"></i>
                     <div class="label">
@@ -38,6 +38,10 @@ const getTracks = (term) => {
                     </div>
                 </section>`
                 }
+                const trackElements = document.querySelectorAll('.track-item.preview');
+                    for (const elem of trackElements) {
+                        elem.onclick = playTracks;
+                    }
             }
             else{
                 document.querySelector("#track-section").innerHTML = '<h1>Songs</h1><p>no tracks to display<p>'
@@ -102,6 +106,13 @@ const getArtist = (term) => {
         });
     };
 
+const playTracks = (ev) => {
+    const elem = ev.currentTarget;
+    const preview_url = String(elem.dataset.index)
+    document.querySelector('#track').src = preview_url
+    audioPlayer.setAudioFile(preview_url);
+    audioPlayer.play();
+}
 
 document.querySelector('#search').onkeyup = (ev) => {
     // Number 13 is the "Enter" key on the keyboard
