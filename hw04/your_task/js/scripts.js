@@ -16,6 +16,7 @@ const search = (ev) => {
     }
 }
 
+//display tracks
 const getTracks = (term) => {
     let url = `https://www.apitutor.org/spotify/simple/v1/search?type=track&q=${term}&limit=5`
     fetch(url)
@@ -49,6 +50,7 @@ const getTracks = (term) => {
         });
 };
 
+//display albums
 const getAlbums = (term) => {
     let url = `https://www.apitutor.org/spotify/simple/v1/search?type=album&q=${term}`
     fetch(url)
@@ -78,6 +80,7 @@ const getAlbums = (term) => {
         });
 };
 
+//display artists
 const getArtist = (term) => {
     let url = `https://www.apitutor.org/spotify/simple/v1/search?type=artist&q=${term}&limit=1`
     fetch(url)
@@ -106,6 +109,7 @@ const getArtist = (term) => {
         });
     };
 
+//play tracks
 const playTracks = (ev) => {
     const elem = ev.currentTarget;
     const preview_url = String(elem.dataset.index)
@@ -114,6 +118,7 @@ const playTracks = (ev) => {
     audioPlayer.play();
 }
 
+//search
 document.querySelector('#search').onkeyup = (ev) => {
     // Number 13 is the "Enter" key on the keyboard
     console.log(ev.keyCode);
