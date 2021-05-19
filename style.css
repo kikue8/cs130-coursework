@@ -20,6 +20,14 @@ main{
     "tutorials hw";
 }
 
+.tutorials{
+    grid-area: tutorials
+}
+
+.homework{
+    grid-area: hw
+}
+
 header, .tutorials, .homework, .inspiration {
     padding: 5px;
     color: #F06543;
