@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Spotify Player</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body id="container">
+        <aside id="sidebar">
+            <h1>
+                <i class="fab fa-spotify"></i>
+                Spotify
+            </h1>
+            <a class="selected" href="#">
+                <i class="fas fa-search"></i>
+                Search
+            </a>
+        </aside>
+
+        <main>
+            <header>
+                <i class="fas fa-search"></i>
+                <input type="search" 
+                    placeholder="Search for Artists or Songs" 
+                    id="search" 
+                    value="" />
+            </header>
+            <article id="featured-content">
+                <section id="artist-section">
+                    <h1>Top Result</h1>
+                </section>
+                <section id="track-section">
+                    <h1>Songs</h1>
+                </section>
+                <section id="album-section">
+                    <h1>Albums</h1>
+                    <section id="albums"> </section>
+                </section>
+            </article>
+        </main>
+        
+        <footer>
+            <div class="track-item">
+                <!-- to be populated from data -->
+            </div>
+            <div class="player">
+                <div class="controls">
+                    <i id="rwd" class="fas fa-step-backward"></i>
+                    <i id="play_pause" class="far fa-play-circle"></i>
+                    <i id="ffwd" class="fas fa-step-forward"></i>
+                </div>
+                <div class="slider">
+                    <audio preload class="audio">
+                        <source src="#" type="audio/mpeg" />
+                    </audio>
+                    <span id="time-elapsed">00:00</span>
+                    <input type="range" id="player-time" value="1" max="100" min="1" step="1">
+                    <span id="time-total">00:30</span>
+                </div>
+                <audio id="track" src=""/>
+            </div>
+        </footer>
+        <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/audio-player.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+    </body>
+</html>
