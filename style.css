@@ -13,19 +13,19 @@ body {
 
 main{
     display: grid;
-    margin: 0px;
+    overflow-y: scroll;
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 100vh;
+    grid-template-rows: auto;
     grid-template-areas:
     "tutorials hw";
 }
 
 .tutorials{
-    grid-area: tutorials
+    grid-area: tutorials;
 }
 
 .homework{
-    grid-area: hw
+    grid-area: hw;
 }
 
 header, .tutorials, .homework, .inspiration {
@@ -67,8 +67,8 @@ a {
 .folders{
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
     justify-content: center;
+    align-items: center;
     margin-top: -40px;
 }
 
